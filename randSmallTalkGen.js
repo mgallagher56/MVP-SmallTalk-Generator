@@ -22,7 +22,7 @@ const smallTalkGenerator = (smallTalkQuestions) => {
 };
 document.getElementById('newSmallTalk').addEventListener('click', () => {
     let question = smallTalkGenerator(smallTalkQuestions);
-    document.getElementById('smallTalk').innerHTML = "<h1>" + question + "</h1>";
+    document.getElementById('smallTalk').innerHTML = "<h3 style='position: relative; left: 20px'>" + question + "</h3>";
     }
 );
 
