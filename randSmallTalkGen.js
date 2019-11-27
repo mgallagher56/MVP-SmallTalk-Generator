@@ -17,8 +17,10 @@ smallTalkQuestions = [
     'If you could have any type of animal for a pet, what would it be?'
 ];
 
+let questionNum = smallTalkQuestions.length;
+
 const smallTalkGenerator = (smallTalkQuestions) => {
-    return smallTalkQuestions[Math.floor(Math.random() * 10)]
+    return smallTalkQuestions[Math.floor(Math.random() * questionNum)]
 };
 document.getElementById('newSmallTalk').addEventListener('click', () => {
     let question = smallTalkGenerator(smallTalkQuestions);
